@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WhatsApp Web – Log in</title>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI, Arial, sans-serif;
+}
+
+body{
+  background:#fdf6ee;
+}
+
+/* TOP LOGO */
+.top-bar{
+  padding:20px 40px;
+  color:#25d366;
+  font-size:22px;
+  font-weight:600;
+}
+
+/* MAIN WRAPPER */
+.wrapper{
+  display:flex;
+  justify-content:center;
+  margin-top:40px;
+}
+
+/* CARD */
+.card{
+  background:#fff;
+  width:900px;
+  border-radius:16px;
+  padding:30px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* DOWNLOAD BANNER */
+.download{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border:1px solid #e0e0e0;
+  border-radius:14px;
+  padding:20px;
+  margin-bottom:30px;
+}
+
+.download-left{
+  display:flex;
+  gap:16px;
+  align-items:center;
+}
+
+.download-left span{
+  font-size:28px;
+  color:#25d366;
+}
+
+.download button{
+  background:#25d366;
+  color:#fff;
+  border:none;
+  padding:12px 22px;
+  border-radius:24px;
+  font-size:15px;
+  cursor:pointer;
+}
+
+/* LOGIN SECTION */
+.login{
+  display:flex;
+  gap:40px;
+}
+
+.steps{
+  flex:1;
+}
+
+.steps h2{
+  font-size:28px;
+  margin-bottom:20px;
+}
+
+.step{
+  display:flex;
+  gap:14px;
+  margin-bottom:18px;
+  font-size:16px;
+}
+
+.circle{
+  width:26px;
+  height:26px;
+  border-radius:50%;
+  border:1px solid #111;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+}
+
+/* QR */
+.qr{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.qr-box{
+  width:260px;
+  height:260px;
+  border:8px solid #eaeaea;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.qr-box img{
+  width:200px;
+  height:200px;
+}
+
+/* LINKS */
+.links{
+  margin-top:20px;
+  font-size:14px;
+}
+
+.links a{
+  color:#25d366;
+  text-decoration:none;
+}
+
+/* FOOTER */
+.footer{
+  text-align:center;
+  margin-top:20px;
+  font-size:13px;
+  color:#555;
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP -->
+<div class="top-bar">
+  WhatsApp
+</div>
+
+<!-- CENTER -->
+<div class="wrapper">
+  <div class="card">
+
+    <!-- DOWNLOAD -->
+    <div class="download">
+      <div class="download-left">
+        <span class="material-icons">desktop_windows</span>
+        <div>
+          <b>Download WhatsApp for Windows</b><br>
+          Make calls, share your screen and get a faster experience.
+        </div>
+      </div>
+      <button>Download</button>
+    </div>
+
+    <!-- LOGIN -->
+    <div class="login">
+
+      <!-- STEPS -->
+      <div class="steps">
+        <h2>Steps to log in</h2>
+
+        <div class="step">
+          <div class="circle">1</div>
+          <div>Open WhatsApp on your phone</div>
+        </div>
+
+        <div class="step">
+          <div class="circle">2</div>
+          <div>On Android tap Menu • On iPhone tap Settings</div>
+        </div>
+
+        <div class="step">
+          <div class="circle">3</div>
+          <div>Tap Linked devices, then Link device</div>
+        </div>
+
+        <div class="step">
+          <div class="circle">4</div>
+          <div>Scan the QR code to confirm</div>
+        </div>
+
+        <div class="links">
+          <a href="#">Log in with phone number</a>
+        </div>
+      </div>
+
+      <!-- QR -->
+      <div class="qr">
+        <div class="qr-box">
+          <!-- Fake QR Image -->
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=WhatsAppWeb">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  Your personal messages are end-to-end encrypted
+</div>
+
+</body>
+</html>
