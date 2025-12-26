@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Socket.io Chat Test</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f4f4;
+      padding: 30px;
+    }
+    #chat-box {
+      background: #fff;
+      padding: 20px;
+      width: 400px;
+      border-radius: 5px;
+    }
+    #messages {
+      height: 200px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      overflow-y: auto;
+      padding: 10px;
+    }
+    input {
+      width: 75%;
+      padding: 8px;
+    }
+    button {
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="chat-box">
+  <h3>Socket.io Client Test</h3>
+
+  <div id="messages"></div>
+
+  <input id="messageInput" placeholder="Type message">
+  <button onclick="sendMessage()">Send</button>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
