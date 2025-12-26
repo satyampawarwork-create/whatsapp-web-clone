@@ -1,20 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Login</title>
+  <meta charset="UTF-8">
+  <title>WhatsApp UI - User Status</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h2>Login</h2>
+  <!-- Chat Header -->
+  <div class="chat-header">
+    <div class="user-info">
+      <h4>Dushyant</h4>
+      <small id="statusText" class="online">Online</small>
+    </div>
+  </div>
 
-  <input id="loginEmail" type="email" placeholder="Email">
-  <input id="loginPassword" type="password" placeholder="Password">
+  <!-- User List -->
+  <div class="user-list">
+    <div class="user">
+      <span class="dot online"></span>
+      <span>Rahul</span>
+    </div>
 
-  <button onclick="login()">Login</button>
+    <div class="user">
+      <span class="dot offline"></span>
+      <span>Aman</span>
+    </div>
+  </div>
 
-  <p>New user? <a href="signup.html">Signup</a></p>
-
-  <script src="auth.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
